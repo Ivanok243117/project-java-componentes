@@ -1,5 +1,5 @@
 // App.java
-// Clase principal para probar Vehiculo, Motor y Transmision
+// Clase principal para probar Vehiculo, Motor, Transmision, Chasis y Neumatico
 
 public class app {
     public static void main(String[] args) {
@@ -26,5 +26,23 @@ public class app {
         System.out.println("Tipo de transmisión: " + miTransmision.getTipo());
         System.out.println("Número de marchas: " + miTransmision.getMarchas());
         System.out.println("Tracción: " + miTransmision.getTraccion());
+        System.out.println();
+
+        // Chasis
+        Chasis miChasis = new Chasis("Monocasco", 4.5, 1.8, 1200);
+        miChasis.mostrarChasis();
+        System.out.println("Tipo de chasis: " + miChasis.getTipo());
+        System.out.println("Largo: " + miChasis.getLargo() + " m");
+        System.out.println("Ancho: " + miChasis.getAncho() + " m");
+        System.out.println("Peso: " + miChasis.getPeso() + " kg");
+        System.out.println();
+
+        // Neumatico
+        Neumatico miNeumatico = new Neumatico("Michelin", 17, 32.5);
+        miNeumatico.mostrarNeumatico();
+        System.out.println("Marca del neumático: " + miNeumatico.getMarca());
+        System.out.println("Tamaño: " + miNeumatico.getTamaño() + "\"");
+        System.out.println("Presión: " + miNeumatico.getPresion() + " PSI");
     }
 }
+
