@@ -1,5 +1,5 @@
 // App.java
-// Clase principal para probar Vehiculo, Motor, Transmision, Chasis y Neumatico
+// Clase principal para probar Vehiculo, Motor, Transmision, Chasis, Neumatico, SistemaElectrico y SistemaFrenos
 
 public class app {
     public static void main(String[] args) {
@@ -43,6 +43,24 @@ public class app {
         System.out.println("Marca del neumático: " + miNeumatico.getMarca());
         System.out.println("Tamaño: " + miNeumatico.getTamaño() + "\"");
         System.out.println("Presión: " + miNeumatico.getPresion() + " PSI");
+        System.out.println();
+
+        // SistemaElectrico
+        SistemaElectrico miSistemaElectrico = new SistemaElectrico("Bosch", 6, 12);
+        miSistemaElectrico.mostrarSistema();
+        System.out.println("Batería: " + miSistemaElectrico.getBateria());
+        System.out.println("Cantidad de luces: " + miSistemaElectrico.getCantidadLuces());
+        System.out.println("Sensores: " + miSistemaElectrico.getSensores());
+        System.out.println();
+
+        // SistemaFrenos
+        SistemaFrenos miSistemaFrenos = new SistemaFrenos("Disco", 4, true, "Óptimo");
+        miSistemaFrenos.mostrarFrenos();
+        System.out.println("Tipo de frenos: " + miSistemaFrenos.getTipo());
+        System.out.println("Cantidad de discos: " + miSistemaFrenos.getDiscos());
+        System.out.println("ABS: " + (miSistemaFrenos.isAbs() ? "Sí" : "No"));
+        System.out.println("Estado: " + miSistemaFrenos.getEstado());
     }
 }
+
 

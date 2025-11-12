@@ -1,11 +1,11 @@
 public class Chasis {
-    // 🔹 Atributos
+    // Atributos
     private String tipo;
     private double largo;
     private double ancho;
     private double peso;
 
-    // 🔸 Constructor
+    // Constructor
     public Chasis(String tipo, double largo, double ancho, double peso) {
         this.tipo = tipo;
         this.largo = largo;
@@ -13,12 +13,12 @@ public class Chasis {
         this.peso = peso;
     }
 
-    // 🟢 Método funcional
+    // Método funcional
     public void mostrarChasis() {
         System.out.println("Chasis: " + tipo + ", " + largo + "m x " + ancho + "m, " + peso + "kg");
     }
 
-    // 🟠 Getters y Setters
+    // Getters y Setters
     public String getTipo() { return tipo; }
     public void setTipo(String tipo) { this.tipo = tipo; }
 
