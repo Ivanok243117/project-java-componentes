@@ -21,3 +21,8 @@ Actualmente, las clases están desacopladas y se instancian de forma independien
 Ejecución en App.java
 La clase App se utiliza para instanciar y probar cada clase individualmente, mostrando sus atributos mediante métodos como mostrarInfo() o mostrarDatos().
 
+![Ejecución clase Vehiculo](src/image/Imagen1.png)
+![Ejecución clase Motor y Transmision](src/image/Imagen2.png)
+![Ejecución clases Chasis y Neumatico](src/image/Imagen3.png)
+![Ejecución clases SistemaElectrico y SistemaFrenos](src/image/Imagen4.png)
+![Ejecución clases RegistroVehicular, Mantenimiento y sensor](src/image/Imagen5.png)
