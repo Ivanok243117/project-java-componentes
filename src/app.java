@@ -1,5 +1,5 @@
 // App.java
-// Clase principal para probar Vehiculo, Motor, Transmision, Chasis, Neumatico, SistemaElectrico y SistemaFrenos
+// Clase principal para probar Vehiculo, Motor, Transmision, Chasis, Neumatico, SistemaElectrico, SistemaFrenos, Mantenimiento y Sensor
 
 public class app {
     public static void main(String[] args) {
@@ -60,7 +60,20 @@ public class app {
         System.out.println("Cantidad de discos: " + miSistemaFrenos.getDiscos());
         System.out.println("ABS: " + (miSistemaFrenos.isAbs() ? "Sí" : "No"));
         System.out.println("Estado: " + miSistemaFrenos.getEstado());
+        System.out.println();
+
+        // Mantenimiento
+        Mantenimiento miMantenimiento = new Mantenimiento("2025-10-15", "Cambio de aceite", "Se cambió el aceite y se revisaron los filtros.");
+        miMantenimiento.mostrarMantenimiento();
+        System.out.println("Fecha: " + miMantenimiento.getFecha());
+        System.out.println("Tipo: " + miMantenimiento.getTipo());
+        System.out.println("Observaciones: " + miMantenimiento.getObservaciones());
+        System.out.println();
+
+        // Sensor
+        Sensor miSensor = new Sensor("Temperatura del motor", 87.5);
+        miSensor.mostrarSensor();
+        System.out.println("Tipo de sensor: " + miSensor.getTipo());
+        System.out.println("Valor actual: " + miSensor.getValor());
     }
 }
-
-
